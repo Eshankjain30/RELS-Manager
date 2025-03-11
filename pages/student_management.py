@@ -12,7 +12,11 @@ def main():
     gr_number = generate_gr_number()
     current_date = datetime.now().strftime("%d-%m-%Y")
     
-    st.markdown("<h2 style='text-align: center;'>APPLICATION FORM</h2>", unsafe_allow_html=True)
+    st.markdown("""<h2 style='text-align: center;'>APPLICATION FORM</h2>
+                <style>
+                section[data-testid='stSidebar'] {display: none !important;}
+                div[data-testid='collapsedControl'] {display: none !important;}
+                #MainMenu {visibility: hidden;}</style>""", unsafe_allow_html=True)
     
     # G.R. Number and Date
     col1, col2 = st.columns([3, 1])

@@ -16,6 +16,7 @@ def main():
             .st-emotion-cache-1gulkj5 {display: none;}
             section[data-testid='stSidebar'] {display: none !important;}
             div[data-testid='collapsedControl'] {display: none !important;}
+            #MainMenu {visibility: hidden;}
         </style>
     """, unsafe_allow_html=True)
     

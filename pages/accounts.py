@@ -31,7 +31,7 @@ def fetch_transactions():
 
 # Streamlit UI
 def main():
-    st.set_page_config(page_title="Expense & Income Manager", layout="wide")
+    st.set_page_config(page_title="Expense Manager")
     
     st.markdown("""
         <style>
@@ -41,6 +41,9 @@ def main():
             .css-1d391kg {color: #FFA500;}
             .stButton>button {background-color: #FFA500; color: #FFFFFF;}
             .dataframe {background-color: transparent !important;}
+            section[data-testid='stSidebar'] {display: none !important;}
+            div[data-testid='collapsedControl'] {display: none !important;}
+            #MainMenu {visibility: hidden;}
         </style>
     """, unsafe_allow_html=True)
     
